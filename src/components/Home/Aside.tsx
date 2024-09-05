@@ -1,10 +1,12 @@
 "use client";
-import { FilterMovies } from "@/Schemas/request/FilterMovies";
+import type { FilterMovies } from "@/Schemas/request/FilterMovies";
+
 import { useForm } from "react-hook-form";
+
 import { InputSearchFormField } from "../form/InputSearchFormField";
 import { SelectGenreFormField } from "../form/SelectGenreFormField";
 
-export const Aside = () => {
+export function Aside() {
   const form = useForm<FilterMovies>({
     defaultValues: {
       search: "",
@@ -13,18 +15,19 @@ export const Aside = () => {
   });
 
   const onSubmit = (data: FilterMovies) => {
+    // eslint-disable-next-line no-console
     console.log(data);
   };
 
   return (
-    <aside className="bg-neutral-800 px-4 py-8 w-fit">
+    <aside className="w-fit bg-neutral-800 px-4 py-8">
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
         className="flex flex-col gap-8"
+        onSubmit={form.handleSubmit(onSubmit)}
       >
         <InputSearchFormField />
         <SelectGenreFormField />
       </form>
     </aside>
   );
-};
+}

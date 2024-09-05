@@ -1,8 +1,8 @@
-export const SelectGenreFormField = () => {
+export function SelectGenreFormField() {
   return (
-    <label className="text-white space-y-4">
-      <span className="font-bold text-xl">Genres</span>
-      <select className="bg-neutral-850 py-3 px-4 w-full block ">
+    <label className="space-y-4 text-white">
+      <span className="text-xl font-bold">Genres</span>
+      <select className="block w-full bg-neutral-850 px-4 py-3 ">
         <option value="">Choose a Genre</option>
         <option value="US">United States</option>
         <option value="CA">Canada</option>
@@ -11,4 +11,4 @@ export const SelectGenreFormField = () => {
       </select>
     </label>
   );
-};
+}

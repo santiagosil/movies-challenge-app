@@ -1,23 +1,23 @@
-import { CircleUser } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { ProfileButton } from "../ui/ProfileButton";
 
-export const Header = () => {
+export function Header() {
   return (
-    <header className="bg-black w-full text-white flex justify-between items-center py-4 px-12">
-      <nav className="space-x-16 flex items-center w-min">
+    <header className="flex w-full items-center justify-between bg-black px-12 py-4 text-white">
+      <nav className="flex w-min items-center space-x-16">
         <Image
-          src="/logo.svg"
           alt="Logo"
-          className="w-[200px] h-auto"
-          width={180}
+          className="h-auto w-[200px]"
           height={50}
+          src="/logo.svg"
+          width={180}
         />
-        <Link href={"/"}>Popular</Link>
-        <Link href={"/"}>Favorites</Link>
+        <Link href="/">Popular</Link>
+        <Link href="/">Favorites</Link>
       </nav>
       <ProfileButton />
     </header>
   );
-};
+}

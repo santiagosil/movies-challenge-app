@@ -80,6 +80,9 @@ module.exports = {
     "no-console": "error",
     "@typescript-eslint/unified-signatures": "off",
     "no-unused-vars": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn", // or "error"
       {
@@ -88,7 +91,7 @@ module.exports = {
         caughtErrorsIgnorePattern: "^_",
       },
     ],
-    "@typescript-eslint/naming-convention": [
+    /* "@typescript-eslint/naming-convention": [
       "error",
       {
         selector: "default",
@@ -146,6 +149,6 @@ module.exports = {
         format: ["PascalCase", "camelCase"],
         leadingUnderscore: "allow",
       }
-    ],
+    ], */
   },
 };

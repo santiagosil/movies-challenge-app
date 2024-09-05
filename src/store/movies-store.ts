@@ -1,4 +1,5 @@
-import { MovieResume } from "@/Schemas/request/MovieResume";
+import type { MovieResume } from "@/Schemas/request/MovieResume";
+
 import { create } from "zustand";
 
 interface MoviesStore {

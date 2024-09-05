@@ -1,17 +1,18 @@
-import { Mail, MailCheck } from "lucide-react";
+import { MailCheck } from "lucide-react";
+
 import { InputFormField } from "./InputFormField";
 import { SubmitButton } from "./SubmitButton";
 
-export const FormSignUp = () => {
+export function FormSignUp() {
   return (
-    <form className="space-y-8 max-w-96">
+    <form className="max-w-96 space-y-8">
       <p>We love having you back</p>
-      <InputFormField type="text" placeholder="Email" />
-      <InputFormField type="password" placeholder="Password" />
+      <InputFormField placeholder="Email" type="text" />
+      <InputFormField placeholder="Password" type="password" />
       <SubmitButton type="submit">
         <span>Register with your Email</span>
         <MailCheck />
       </SubmitButton>
     </form>
   );
-};
+}

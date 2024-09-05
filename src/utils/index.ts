@@ -1,7 +1,7 @@
-import { type ClassValue, clsx } from "clsx";
+import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-export const calculateColorRating = (percent: number, opacity = 1) => {
+export const calculateColorRating = (percent: number, opacity = 1): string => {
   if (percent < 50) {
     return `rgba(239, 68, 68, ${opacity})`;
   } else if (percent < 80) {
@@ -11,6 +11,6 @@ export const calculateColorRating = (percent: number, opacity = 1) => {
   }
 };
 
-export function cn(...inputs: ClassValue[]) {
+export function cn(...inputs: ClassValue[]): string {
   return twMerge(clsx(inputs));
 }

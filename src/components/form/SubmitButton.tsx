@@ -5,22 +5,24 @@ interface SubmitButtonProps
   children: React.ReactNode;
 }
 
-export const SubmitButton = ({
+export function SubmitButton({
   children,
   className,
+  type,
   ...props
-}: SubmitButtonProps) => {
+}: SubmitButtonProps) {
   return (
     <button
       className={cn(
-        "bg-yellow-400 p-4 text-black font-semibold flex items-center justify-center rounded-md hover:bg-yellow-500 transition-colors",
+        "flex items-center justify-center rounded-md bg-yellow-400 p-4 font-semibold text-black transition-colors hover:bg-yellow-500",
         className,
       )}
+      type={type}
       {...props}
     >
-      <span className="flex items-center justify-center space-x-2 w-fit text-nowrap">
+      <span className="flex w-fit items-center justify-center space-x-2 text-nowrap">
         {children}
       </span>
     </button>
   );
-};
+}

@@ -1,8 +1,9 @@
 import { Header } from "@/components/shared/Header";
-import RootLayout from "./layout";
 import { Hero } from "@/components/Home/Hero";
 import { Aside } from "@/components/Home/Aside";
 import { MoviesList } from "@/components/Home/MoviesList";
+
+import RootLayout from "./layout";
 
 export default function Home(): JSX.Element {
   return (

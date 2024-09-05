@@ -1,15 +1,16 @@
 "use client";
 import { CircleUser } from "lucide-react";
-import { ModalAuth } from "../shared/auth/ModalAuth";
 import { useState } from "react";
 
-export const ProfileButton = () => {
+import { ModalAuth } from "../shared/auth/ModalAuth";
+
+export function ProfileButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <button
-        className="cursor-pointer p-1.5 rounded-full transition-colors hover:bg-neutral-600 w-fit"
+        className="w-fit cursor-pointer rounded-full p-1.5 transition-colors hover:bg-neutral-600"
         type="button"
         onClick={() => setIsOpen(true)}
       >
@@ -18,4 +19,4 @@ export const ProfileButton = () => {
       <ModalAuth isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
-};
+}

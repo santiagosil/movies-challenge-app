@@ -1,10 +1,12 @@
 import type {Metadata} from "next";
+import type {GetPagedMovie} from "@/Schemas/response/GetPagedMovie";
 
 import {Header} from "@/components/shared/Header";
 import {Hero} from "@/components/Home/Hero";
 import {Aside} from "@/components/Home/Aside";
 import {MoviesList} from "@/components/Home/MoviesList";
-import {getPopularMovies} from "@/services/PopularMovies";
+import {getMoviesByFilter, getPopularMovies} from "@/services/PopularMovies";
+import {getGenres} from "@/services/Genres";
 
 import RootLayout from "./layout";
 
@@ -17,18 +19,25 @@ export const metadata: Metadata = {
 };
 
 interface HomePageProps {
-  searchParams: {page?: string};
+  searchParams: {page?: string; keywords?: string; genre?: string};
 }
 
 export default async function HomePage({searchParams}: HomePageProps) {
-  const popularMovies = await getPopularMovies(searchParams.page);
+  let popularMovies: GetPagedMovie | undefined = undefined;
+
+  if (searchParams.keywords || searchParams.genre) {
+    popularMovies = await getMoviesByFilter(searchParams);
+  } else {
+    popularMovies = await getPopularMovies(searchParams.page);
+  }
+  const genres = await getGenres();
 
   return (
     <RootLayout>
       <Header />
       <Hero />
       <main className="flex min-h-96">
-        <Aside />
+        <Aside genres={genres} />
         <MoviesList list={popularMovies} title="Popular" />
       </main>
     </RootLayout>

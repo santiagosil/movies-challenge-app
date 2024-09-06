@@ -3,6 +3,7 @@ import type {MovieResume} from "@/Schemas/response/MovieResume";
 
 import Image from "next/image";
 import Link from "next/link";
+import {format} from "date-fns";
 
 import {Rating} from "../ui/Rating";
 import {FavoriteButton} from "../ui/FavoriteButton";
@@ -25,7 +26,7 @@ export function CardMovie({movieResume}: CardMovieProps) {
       </Link>
       <article className="flex h-full flex-col justify-between bg-neutral-850 p-3 text-white/80">
         <h5 className="text-lg font-bold text-white">{movieResume.title}</h5>
-        <p>{movieResume.release_date}</p>
+        <p>{format(movieResume.release_date, "PP")}</p>
         <div className="flex items-center justify-between">
           <label className="flex flex-col items-center text-center">
             <span>Rating</span>

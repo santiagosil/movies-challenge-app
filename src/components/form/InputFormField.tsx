@@ -1,9 +1,9 @@
-import { Eye, EyeOff } from "lucide-react";
-import { useState } from "react";
+import {Eye, EyeOff} from "lucide-react";
+import {useState} from "react";
 
 type InputFormFieldProps = React.InputHTMLAttributes<HTMLInputElement>;
 
-export function InputFormField({ type, ...props }: InputFormFieldProps) {
+export function InputFormField({type, ...props}: InputFormFieldProps) {
   const [typeAux, setTypeAux] = useState(type);
 
   return (
@@ -13,9 +13,7 @@ export function InputFormField({ type, ...props }: InputFormFieldProps) {
         <button
           className="absolute right-3 top-1/2 size-5 -translate-y-1/2 text-black"
           type="button"
-          onClick={() =>
-            setTypeAux((prev) => (prev === "password" ? "text" : "password"))
-          }
+          onClick={() => setTypeAux((prev) => (prev === "password" ? "text" : "password"))}
         >
           {typeAux === "password" ? <Eye /> : <EyeOff />}
         </button>

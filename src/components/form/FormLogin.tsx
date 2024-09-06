@@ -1,7 +1,7 @@
-import { Ticket } from "lucide-react";
+import {Ticket} from "lucide-react";
 
-import { InputFormField } from "./InputFormField";
-import { SubmitButton } from "./SubmitButton";
+import {InputFormField} from "./InputFormField";
+import {SubmitButton} from "./SubmitButton";
 
 export function FormLogin() {
   return (

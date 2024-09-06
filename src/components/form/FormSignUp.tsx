@@ -1,7 +1,7 @@
-import { MailCheck } from "lucide-react";
+import {MailCheck} from "lucide-react";
 
-import { InputFormField } from "./InputFormField";
-import { SubmitButton } from "./SubmitButton";
+import {InputFormField} from "./InputFormField";
+import {SubmitButton} from "./SubmitButton";
 
 export function FormSignUp() {
   return (

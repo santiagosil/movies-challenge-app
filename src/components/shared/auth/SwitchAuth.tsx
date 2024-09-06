@@ -1,12 +1,12 @@
-import type { Dispatch, SetStateAction } from "react";
+import type {Dispatch, SetStateAction} from "react";
 
-import { cn } from "@/utils";
+import {cn} from "@/utils";
 interface SwitchAuthProps {
   check: boolean;
   setCheck: Dispatch<SetStateAction<boolean>>;
 }
 
-export function SwitchAuth({ check, setCheck }: SwitchAuthProps) {
+export function SwitchAuth({check, setCheck}: SwitchAuthProps) {
   return (
     <label className="flex w-full cursor-pointer items-center justify-center">
       <input

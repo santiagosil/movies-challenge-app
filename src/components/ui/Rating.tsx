@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import {CircularProgressbar, buildStyles} from "react-circular-progressbar";
 
-import { calculateColorRating } from "@/utils";
+import {calculateColorRating} from "@/utils";
 import "react-circular-progressbar/dist/styles.css";
 
 interface RatingProps {
@@ -10,7 +10,7 @@ interface RatingProps {
   className?: string;
 }
 
-export function Rating({ percent, className = "" }: RatingProps) {
+export function Rating({percent, className = ""}: RatingProps) {
   return (
     <CircularProgressbar
       className={`${className} font-bold`}

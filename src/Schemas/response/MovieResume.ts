@@ -1,9 +1,8 @@
-import { z } from "zod";
+import {z} from "zod";
 
 export const MovieResumeSchema = z.object({
   adult: z.boolean(),
   backdrop_path: z.string(),
-  genre_ids: z.array(z.number()),
   id: z.number(),
   original_language: z.string(),
   original_title: z.string(),
@@ -15,6 +14,7 @@ export const MovieResumeSchema = z.object({
   video: z.boolean(),
   vote_average: z.number(),
   vote_count: z.number(),
+  isFavorite: z.boolean().optional().default(false),
 });
 
 export type MovieResume = z.infer<typeof MovieResumeSchema>;

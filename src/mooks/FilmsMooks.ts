@@ -4,7 +4,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg",
-      genre_ids: [28, 35, 878],
       id: 533535,
       original_language: "en",
       original_title: "Deadpool & Wolverine",
@@ -21,7 +20,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg",
-      genre_ids: [16, 10751, 12, 35],
       id: 1022789,
       original_language: "en",
       original_title: "Inside Out 2",
@@ -38,7 +36,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/lgkPzcOSnTvjeMnuFzozRO5HHw1.jpg",
-      genre_ids: [16, 10751, 35, 28],
       id: 519182,
       original_language: "en",
       original_title: "Despicable Me 4",
@@ -55,7 +52,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/3q01ACG0MWm0DekhvkPFCXyPZSu.jpg",
-      genre_ids: [28, 80, 53, 35],
       id: 573435,
       original_language: "en",
       original_title: "Bad Boys: Ride or Die",
@@ -72,7 +68,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/7aPrv2HFssWcOtpig5G3HEVk3uS.jpg",
-      genre_ids: [28, 12, 53],
       id: 718821,
       original_language: "en",
       original_title: "Twisters",
@@ -89,7 +84,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/9juRmk8QjcsUcbrevVu5t8VZy5G.jpg",
-      genre_ids: [28, 12, 80, 53],
       id: 923667,
       original_language: "cn",
       original_title: "九龍城寨之圍城",
@@ -106,7 +100,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/p5kpFS0P3lIwzwzHBOULQovNWyj.jpg",
-      genre_ids: [80, 53],
       id: 1032823,
       original_language: "en",
       original_title: "Trap",
@@ -123,7 +116,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/4ft6TR9wA6bra0RLL6G7JFDQ5t1.jpg",
-      genre_ids: [28, 35],
       id: 704239,
       original_language: "en",
       original_title: "The Union",
@@ -140,7 +132,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/bxwKC4qAbceMgHU1xCCTBK1eYdn.jpg",
-      genre_ids: [28, 53, 80],
       id: 5492,
       original_language: "en",
       original_title: "Gunner",
@@ -157,7 +148,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/lkmkNVFGsRVKZs1MqKbE6zabXc4.jpg",
-      genre_ids: [80, 27, 53],
       id: 1226578,
       original_language: "en",
       original_title: "Longlegs",
@@ -174,7 +164,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/9BQqngPfwpeAfK7c2H3cwIFWIVR.jpg",
-      genre_ids: [10749, 18],
       id: 1079091,
       original_language: "en",
       original_title: "It Ends with Us",
@@ -191,7 +180,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/6IrZ3C8qSZ8Tbb32s41ReJOXpI0.jpg",
-      genre_ids: [12, 10751, 14, 35],
       id: 826510,
       original_language: "en",
       original_title: "Harold and the Purple Crayon",
@@ -208,7 +196,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/okVLmXL5y18dfN2R4ufMZEGaeCd.jpg",
-      genre_ids: [28, 80],
       id: 1160018,
       original_language: "hi",
       original_title: "Kill",
@@ -225,7 +212,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/9SSEUrSqhljBMzRe4aBTh17rUaC.jpg",
-      genre_ids: [27, 878],
       id: 945961,
       original_language: "en",
       original_title: "Alien: Romulus",
@@ -242,7 +228,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/rSRA1p4e3laAAJflzdgtqNlx27Y.jpg",
-      genre_ids: [28],
       id: 1049574,
       original_language: "en",
       original_title: "Darkness of Man",
@@ -259,7 +244,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/pzFbYJfqGKlGxOsDIIsUi6YxVQ.jpg",
-      genre_ids: [35, 878],
       id: 1094138,
       original_language: "en",
       original_title: "Jackpot!",
@@ -276,7 +260,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/mKOBdgaEFguADkJhfFslY7TYxIh.jpg",
-      genre_ids: [28, 878, 35, 12, 53],
       id: 365177,
       original_language: "en",
       original_title: "Borderlands",
@@ -293,7 +276,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/2RVcJbWFmICRDsVxRI8F5xRmRsK.jpg",
-      genre_ids: [27, 878, 53],
       id: 762441,
       original_language: "en",
       original_title: "A Quiet Place: Day One",
@@ -310,7 +292,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/kwzNUM4yZ26XuNAPSyaWwJeWRP4.jpg",
-      genre_ids: [28, 35, 14],
       id: 950526,
       original_language: "pt",
       original_title: "O Mestre da Fumaça",
@@ -327,7 +308,6 @@ export const films = {
     {
       adult: false,
       backdrop_path: "/hdFIdXwS8FSN2wIsuotjW1mshI0.jpg",
-      genre_ids: [16, 35, 12, 10751],
       id: 831815,
       original_language: "en",
       original_title: "Saving Bikini Bottom: The Sandy Cheeks Movie",

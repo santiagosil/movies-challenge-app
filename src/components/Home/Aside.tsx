@@ -1,10 +1,10 @@
 "use client";
-import type { FilterMovies } from "@/Schemas/request/FilterMovies";
+import type {FilterMovies} from "@/Schemas/form/FilterMovies";
 
-import { useForm } from "react-hook-form";
+import {useForm} from "react-hook-form";
 
-import { InputSearchFormField } from "../form/InputSearchFormField";
-import { SelectGenreFormField } from "../form/SelectGenreFormField";
+import {InputSearchFormField} from "../form/InputSearchFormField";
+import {SelectGenreFormField} from "../form/SelectGenreFormField";
 
 export function Aside() {
   const form = useForm<FilterMovies>({
@@ -21,10 +21,7 @@ export function Aside() {
 
   return (
     <aside className="w-fit bg-neutral-800 px-4 py-8">
-      <form
-        className="flex flex-col gap-8"
-        onSubmit={form.handleSubmit(onSubmit)}
-      >
+      <form className="flex flex-col gap-8" onSubmit={form.handleSubmit(onSubmit)}>
         <InputSearchFormField />
         <SelectGenreFormField />
       </form>

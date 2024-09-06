@@ -7,8 +7,6 @@ import {Header} from "@/components/shared/Header";
 import {getRecomendationsMovies} from "@/services/RecomendationsMovies";
 import {MoviesList} from "@/components/Home/MoviesList";
 
-import {Recomendations} from "@/components/details/Recomendations";
-
 interface DetailsMoviePageProps {
   params: {movieId: string};
   searchParams: {page?: string};
